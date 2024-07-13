@@ -27,3 +27,34 @@ let someNum = 33
 let stringNum = String(someNum)
 console.log(stringNum);
 console.log(typeof(stringNum));
+
+
+//********************operations*******************
+
+let val = 3
+let negValue = -val
+
+console.log(2*2);
+console.log(2**2);// power of 
+
+let str1 = "hello"
+let str2 = "Sahil"
+let str3 = str1 + str2 // concat
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "3");
+console.log("3"*1);
+console.log(+true);
+//console.log(true+); gives error
+console.log(3 + 3/4%0.25);
+
+let num1,num2,num3;
+
+num1 = num2 = num3 = 2+2
+
+let gameCounter = 100
+gameCounter++;
+
+console.log(gameCounter);
