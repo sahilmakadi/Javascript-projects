@@ -1,6 +1,7 @@
 const name = "Sahil"
 const repoCount = 50
 
+// String interpolation (` `)
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
 //another way to initialize string
