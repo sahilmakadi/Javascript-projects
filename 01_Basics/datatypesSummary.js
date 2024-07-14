@@ -49,3 +49,29 @@ const myFunction = function() {
 
 console.log(typeof myFunction);  // this is called object function. function is an object itself
 
+//*********************************** Memory types********************* */
+
+// Stack(Primitive) - you always get a copy of original value  
+//Heap(Non-primitive) - you always get reference of original value
+
+let myName = "Sahil"  //goes in stack
+
+let anotherName = myName
+anotherName = "newName" // anotherName changes but mynmae not as only its copy is given in another space
+
+console.log(myName);
+console.log(anotherName);
+//HeapMemory
+// reference is given so value will change
+let userOne = {
+    email: "nnn@com",
+    upi: "user",
+}
+
+let usertwo = userOne
+
+usertwo.email = "newmail"
+
+// email changed in both
+console.log(userOne.email);
+console.log(usertwo.email);
