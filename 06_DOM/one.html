@@ -4,11 +4,59 @@
     <meta charset="UTF-8">
     
     <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class = "heading">DOM learning on chai aur code</h1>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class = "heading">DOM learning on chai aur code</h1>
         <p>Lorem ipsom dolor sit amet.</p>
+
+        <!-- this is done on browser on our own page -->
+        <!-- title.textContent
+        'DOM learning on chai aur code'
+        title.innerHTML
+        'DOM learning on chai aur code'
+        title.innerText
+        'DOM learning on chai aur code' 
+        
+        content gves all content which is hidden by html css and which is not hidden
+        Text gives only the values which is not hidden
+        html gives all the values with tags
+        -->
+
+        <!-- query selector -->
+         <!-- document.querySelector('h1')
+        <h1 id=​"title" class=​"heading">​DOM learning on chai aur code​</h1>​
+        
+        returns only first occurance of h1 tag
+        -->
+
+        <ul>
+            <li class="list">one</li>
+            <li class="list">two</li>
+            <li class="list">three</li>
+            <li class="list">four</li>
+        </ul>
+
+        <!-- nodelist and htmlCollections are not an array -->
+         <!-- this is how to work -->
+         <!-- myH2.forEach((h)=>{
+            h.style.color='red'
+            h.style.backgroundColor='green'
+            h.style.padding='10px'
+            h.innerText = 'Sahil'
+        }) -->
+
+        <!-- in case of htmlcollections -->
+         <!-- first conver collection into array using 
+          Array.from(document.getElementsByClassName('list')// this returns htmlCollection)
+          then use map or forEach 
+          -->
     </div>
 </body>
 </html>
