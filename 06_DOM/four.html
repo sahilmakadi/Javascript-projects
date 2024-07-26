@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    // for every time you call method this need to traverse whole tree 
+    function addLanguage(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("Python")
+    addLanguage("Typescript")
+
+    // other method
+
+    function addOptiLang(langName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLang("Golang")
+
+    //Edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    //secondLang.innerHTML = "mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "mojo"
+    secondLang.replaceWith(newli)
+
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //remove
+    const remOne = document.querySelector("li:last-child")
+    remOne.remove()
+
+
+</script>
+</html>
