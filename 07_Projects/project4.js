@@ -84,7 +84,7 @@ function newGame() {
         prevGuess = []
         numGuess = 1;
         guesses.innerHTML = ''
-        remainingChances.innerHTML=  ''
+        remainingChances.innerHTML=  '10'
         userNumber.removeAttribute('disabled')
         startOver.removeChild(p)
         displayMessage('')   
