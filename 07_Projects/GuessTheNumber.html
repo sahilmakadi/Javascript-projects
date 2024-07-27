@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+
+    <style>
+        body {
+            background-color: #212121;
+            text-align: center;
+            color: #fff;
+        }
+
+        #number { 
+            height: 5vh;
+            width: 30vh;
+        }
+
+        #submitButton {
+            background-color: black; 
+            color: #fff; 
+            height: 5vh; 
+            width: 30vh; 
+            border-radius: 25%; 
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #000; font-size: 150%; height: 10vh; align-content: center;">Number guessing game</header>
+    <br>
+    <div style="font-size: 140%;">
+        <p><span>Try and guess a random number between 1 and 100.</span></p>
+        <p><span>You have 10 attempts to guess the right answer.</span></p>
+    </div> 
+
+    <div>
+        <form class="guess">
+            <label for="number"><span style="font-size: 400%;">Guess a number</span></label>
+            <br><br><br>
+            <input type="text" id="number">
+            <br><br><br><br>
+            <input id="submitButton" type="submit" value="Submit guess" class="guessSubmit">
+        </form>
+    </div>
+    <div class="resultParas">
+        <p>Previous guesses: <span class="guesses"></span></p>
+        <p>Guesses Remaining: <span class="lastResult">10</span></p>
+        <p class="lowOrHi"></p>
+    </div>
+    
+    <script src="./project4.js"></script>
+</body>
+</html>
