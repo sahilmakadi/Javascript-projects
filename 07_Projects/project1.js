@@ -15,6 +15,7 @@ allColors.forEach((button)=>{
         } else if (e.target.id === 'yellow') {
             document.body.style.backgroundColor = 'yellow'
         } else {
+            // .target is used for selecting attributes
             const white = document.querySelector('#white')
             white.style.color = 'pink'
         }
